@@ -5,6 +5,7 @@ set source=source\main.c
 
 echo Building...
 buildkit\cross9\bin\x86_64-pc-linux-gnu-gcc.exe ^
+    -std=c99 ^
     -g -O -o %name%.com.dbg ^
     %source% ^
     -static -fno-pie -no-pie -mno-red-zone -fno-omit-frame-pointer -nostdlib -nostdinc ^
