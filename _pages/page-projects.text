@@ -7,7 +7,7 @@
 
 <head>
     :Include(meta.html)
-    <title>JC &colon; :Title</title>
+    <title>JC&colon; :Title</title>
     <style>
         :Include(style.css)
     </style>
