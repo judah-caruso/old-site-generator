@@ -2,7 +2,7 @@
 
 call build.bat
 
-echo *** Creating site...
+echo *** Building site...
 rmdir /Q /S docs
 website.com
-echo *** Done!
+echo *** Site built!
