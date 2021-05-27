@@ -1,0 +1,198 @@
+/* TODO: media-query for prefers-color-scheme light/dark */
+:root {
+    --var_background: #ececec;
+    --var_foreground: #242424;
+    --var_link_background: #e2e2e2;
+    --var_link_foreground: #242424;
+}
+
+:focus      { outline: none; }
+::selection { color: var(--var_background); background-color: var(--var_foreground); }
+
+body::-webkit-scrollbar             { width: 1em; }
+body::-webkit-scrollbar-thumb       { border-right: 8px solid var(--var_link_background); }
+body::-webkit-scrollbar-thumb:hover { border-right: 8px solid var(--var_foreground); }
+
+html       { overflow-y: scroll; }
+html, body { padding: 0; margin: 0; }
+
+body {
+    max-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: monospace;
+    font-size: 12pt;
+    line-height: 1.5;
+    padding-top: 25px;
+    color: var(--var_foreground);
+    background-color: var(--var_background);
+}
+
+pre { font-family: monospace; }
+
+a {
+    color: var(--var_link_foreground);
+    padding: 0;
+    padding-inline: 4px;
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: #242424;
+    text-decoration: none;
+}
+
+header {
+    display: inline-block;
+    height: 100%;
+    width: 50px;
+}
+
+header a       { all: revert; }
+header a:hover { all: revert; }
+header svg     { height: 100%; width: 100%; }
+
+#logo-bg {
+    fill: var(--var_link_background);
+    stroke: var(--var_link_background);
+}
+
+#logo-bg:hover {
+    fill: #242424;
+    stroke: #242424;
+}
+
+#logo-mid {
+    fill: #ffffff;
+    stroke: #ffffff;
+    pointer-events: none;
+}
+
+#logo-fg {
+    fill: none;
+    stroke: #ffffff;
+    pointer-events: none;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: super;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    margin-block: 0;
+    margin-inline: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+article h1 {
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+article sub {
+    opacity: 50%;
+}
+
+p {
+    font-family: serif;
+    font-size: 13.5pt;
+    text-align: justify;
+}
+
+#posts   { list-style-type: decimal-leading-zero; }
+#info p  { font-family: monospace; font-size: 12pt; }
+.project { padding-bottom: 25px; }
+
+.project h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+}
+
+.project sub { font-style: italic; }
+.project span, .project sub {
+    display: block;
+    color: #777;
+    font-size: 10.5pt;
+}
+
+.project p {
+    font-family: monospace;
+    font-size: 12pt;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.go        { color: #00add8 !important; display: inline !important; }
+.go:before { content: "Go"; }
+
+.jai        { color: #abd7b9 !important; display: inline !important; }
+.jai:before { content: "Jai"; }
+
+.odin        { color: #60affe !important; display: inline !important; }
+.odin:before { content: "Odin"; }
+
+.c        { color: #555555 !important; display: inline !important; }
+.c:before { content: "C99"; }
+
+.rust        { color: #dea584 !important; display: inline !important; }
+.rust:before { content: "Rust"; }
+
+.haxe        { color: #df7900 !important; display: inline !important; }
+.haxe:before { content: "Haxe"; }
+
+.lua        { color: #000080 !important; display: inline !important; }
+.lua:before { content: "Lua"; }
+
+.cpp        { color: #f34b7d !important; display: inline !important; }
+.cpp:before { content: "C++"; }
+
+.scheme        { color: #1e4aec !important; display: inline !important; }
+.scheme:before { content: "Scheme"; }
+
+.lisp        { color: #1e4aec !important; display: inline !important; }
+.lisp:before { content: "Lisp"; }
+
+/* Mobile/low-width */
+@media (max-width: 800px) and (min-width: 501px) {
+    header       { display: block; margin: 0 auto; }
+    nav          { display: block; text-align: center; }
+
+    main section,
+    main article { width: 80%; margin: 0 auto; }
+}
+
+@media (max-width: 500px) and (min-width: 351px) {
+    header       { display: block; margin: 0 auto; }
+    nav          { display: block; text-align: center; }
+
+    main section,
+    main article { width: 80%; margin: 0 auto; }
+
+    footer                     { text-align: center; }
+    footer > span:nth-child(3) { display: none; }
+    footer > span:nth-child(2) { float: none !important; }
+}
+
+@media (max-width: 350px) {
+    header       { display: block; margin: 0 auto; }
+    nav          { display: block; text-align: center; }
+
+    main section,
+    main article { width: 70%; margin: 0 auto; }
+
+    footer                     { text-align: center; }
+    footer > span:nth-child(3) { display: none; }
+    footer > span:nth-child(2) { float: none !important; }
+}

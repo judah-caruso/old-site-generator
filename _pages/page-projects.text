@@ -1,0 +1,93 @@
+:Title=Projects
+:Kind=Page
+:Template=
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    :Include(meta.html)
+    <title>JC &colon; :Title</title>
+    <style>
+        :Include(style.css)
+    </style>
+</head>
+
+<body>
+    :Include(header.html)
+    <main style="margin-top&colon; 18px;">
+        <section class="project">
+            <h1>Project V</h1>
+            <div>
+                <sub>Collectible Card Game with a twist (in development)</sub>
+                <span>Language&colon; <span class="haxe"></span></span>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus tempore tempora unde non
+                    labore ullam! Libero tempora magnam ea vero accusamus soluta quod ad, numquam impedit ipsa excepturi
+                    ullam ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat soluta voluptates
+                    maiores aperiam? Labore, pariatur. Possimus vel blanditiis, a nemo tempora ducimus iure, quod
+                    distinctio vitae voluptatibus fuga culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Placeat, illo ipsum praesentium minima sunt quasi odit in nisi. Architecto consequuntur voluptatem
+                    vel vero sint debitis illum molestiae soluta hic adipisci!
+                </p>
+            </div>
+        </section>
+        <section class="project">
+            <h1>Project Throne</h1>
+            <div>
+                <sub>Multiplayer Action RPG (in development)</sub>
+                <span>Language&colon; <span class="jai"></span></span>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repudiandae temporibus voluptas
+                    consequuntur minima consectetur ad cum, fuga veritatis totam illum voluptatibus eius dicta, libero
+                    incidunt quam! Quas, cupiditate recusandae!
+                </p>
+            </div>
+        </section>
+        <section class="project">
+            <h1>Tank Tactics Bot</h1>
+            <a target="_blank" href="http&colon;//github.com/judah-caruso/tank-tactics">GitHub</a>
+            <div>
+                <sub>Discord port of the strategy game, Tank Turn Tactics</sub>
+                <span>Language&colon; <span class="go"></span></span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nam laborum. Fugiat
+                    corrupti
+                    rerum
+                    temporibus facilis, fugit vitae suscipit ex pariatur cumque totam non repellat voluptates!
+                    Dolores
+                    alias
+                    dolorem commodi.
+                </p>
+            </div>
+        </section>
+        <section class="project">
+            <h1>Wednesday</h1>
+            <div>
+                <sub>Cryptocurrency trading bot</sub>
+                <span>Language&colon; <span class="odin"></span></span>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error totam sint a explicabo quasi
+                    cupiditate
+                    impedit maiores numquam repudiandae quis itaque vel voluptatibus libero quaerat ad, provident ex?
+                    Modi,
+                    tempora.
+                </p>
+            </div>
+        </section>
+        <section class="project">
+            <h1>Website</h1>
+            <div>
+                <sub>Minimal site generator</sub>
+                <span>Language&colon; <span class="c"></span></span>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea nam itaque dolores eveniet ratione
+                    praesentium iste repellendus porro pariatur voluptatem. Incidunt nulla voluptatum perferendis
+                    inventore nobis sed enim dolor voluptate.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+:Title=Info
+:Kind=Page
+:Template=
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    :Include(meta.html)
+    <title>JC &colon; :Title</title>
+    <style>
+        :Include(style.css)
+    </style>
+</head>
+
+<body>
+    :Include(header.html)
+    <main>
+        <article id="info">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate excepturi voluptatum labore
+                deserunt nulla. Sunt, magnam, exercitationem dolores animi, sint totam laborum explicabo quis esse fugit
+                nihil mollitia fuga!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum minus, labore aliquam repellat fugiat sit
+                non at cum deleniti in laboriosam blanditiis. Pariatur libero debitis itaque optio perspiciatis quis
+                rem?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam a maxime qui asperiores consequuntur
+                explicabo sunt provident laudantium eius eum inventore totam aliquam facere quos delectus, quia
+                dignissimos optio natus?
+            </p>
+        </article>
+    </main>
+    <script>
+        window.addEventListener("load", function (event) {
+            var element = document.getElementById("info");
+            var original_element = element.innerHTML;
+            var info_text = element.textContent.trim();
+            var intro_time = 15;
+
+            element.innerHTML = "";
+            var interval = setInterval(function () {
+                if (intro_time <= 0) {
+                    clearInterval(interval);
+                    element.innerHTML = original_element;
+                    return;
+                }
+
+                element.innerHTML = "";
+                for (i = 0; i < info_text.length; i++) {
+                    element.innerHTML += String.fromCharCode(Math.floor(Math.random() * 127));
+                }
+
+                intro_time -= 1;
+            }, 30);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,2 +1,4 @@
 buildkit/
+site/
+_pages/*.draft
 *.com*
