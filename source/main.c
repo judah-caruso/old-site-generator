@@ -2,7 +2,7 @@
 #define MAX_POSTS 1024
 
 #define RAW_ROOT "_pages/"
-#define SITE_ROOT "site/"
+#define SITE_ROOT "docs/"
 
 #define NO_TEMPLATE ""
 
