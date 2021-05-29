@@ -15,79 +15,89 @@
 
 <body>
     :Include(header.html)
+
     <main style="margin-top&colon; 18px;">
         <section class="project">
-            <h1>Project V</h1>
+            <h1>Sample Search</h1>
+            <a href="https&colon;//judahcaruso.com/samplesearch/">Site</a>
             <div>
-                <sub>Collectible Card Game with a twist (in development)</sub>
-                <span>Language&colon; <span class="haxe"></span></span>
+                <sub>Music sample generator</sub>
+                <span>Tool&colon; <span class="js"></span></span>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus tempore tempora unde non
-                    labore ullam! Libero tempora magnam ea vero accusamus soluta quod ad, numquam impedit ipsa excepturi
-                    ullam ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat soluta voluptates
-                    maiores aperiam? Labore, pariatur. Possimus vel blanditiis, a nemo tempora ducimus iure, quod
-                    distinctio vitae voluptatibus fuga culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Placeat, illo ipsum praesentium minima sunt quasi odit in nisi. Architecto consequuntur voluptatem
-                    vel vero sint debitis illum molestiae soluta hic adipisci!
-                </p>
-            </div>
-        </section>
-        <section class="project">
-            <h1>Project Throne</h1>
-            <div>
-                <sub>Multiplayer Action RPG (in development)</sub>
-                <span>Language&colon; <span class="jai"></span></span>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex repudiandae temporibus voluptas
-                    consequuntur minima consectetur ad cum, fuga veritatis totam illum voluptatibus eius dicta, libero
-                    incidunt quam! Quas, cupiditate recusandae!
+                    This is a simple utility for music producers to find samples using YouTube's vast library of videos.
+                    Since its creation the tool has been featured on some of the most popular sampling/music websites&colon;
+                    <a href="https&colon;//www.whosampled.com/news/2017/07/27/diggers-essential-sample-search-youtube-tool/">WhoSampled</a>,
+                    <a href="https&colon;//thevinylfactory.com/news/new-website-finds-obscure-songs-samples-youtube/">Vinyl Factory</a>,
+                    <a href="https&colon;//mixmag.fr/read/sample-search-outil-pour-les-diggers-news">Mixmag</a>,
+                    and
+                    <a href="https&colon;//www.tracklib.com/">Tracklib</a>.
+                    It was even featured in a
+                    <a href="https&colon;//abciber.org.br/anais-abciber-2017.pdf#page=3420">journal (p.3420)</a> 
+                    by the School of Communications and Arts at the University of São Paulo.
                 </p>
             </div>
         </section>
         <section class="project">
             <h1>Tank Tactics Bot</h1>
-            <a target="_blank" href="http&colon;//github.com/judah-caruso/tank-tactics">GitHub</a>
+            <a href="https&colon;//github.com/judah-caruso/tank-tactics">GitHub</a>
             <div>
                 <sub>Discord port of the strategy game, Tank Turn Tactics</sub>
-                <span>Language&colon; <span class="go"></span></span>
+                <span>Tool&colon; <span class="go"></span></span>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nam laborum. Fugiat
-                    corrupti
-                    rerum
-                    temporibus facilis, fugit vitae suscipit ex pariatur cumque totam non repellat voluptates!
-                    Dolores
-                    alias
-                    dolorem commodi.
+                    I'm a huge fan of
+                    <a href="https&colon;//www.youtube.com/watch?v=t9WMNuyjm4w">Luke Mascat's talk</a>
+                    about a tabletop strategy game that was banned from his workplace.
+                    Not having a way to play this game myself, I decided to remake it, doing a small design deep dive
+                    on Discord bots as a medium for multiplayer games.
                 </p>
             </div>
         </section>
         <section class="project">
-            <h1>Wednesday</h1>
+            <h1>Rhythm HQ</h1>
+            <a href="https&colon;//github.com/judah-caruso/rhythmhq">GitHub A</a>
+            <a href="https&colon;//github.com/judah-caruso/rhythmhq-flask">GitHub B</a>
             <div>
-                <sub>Cryptocurrency trading bot</sub>
-                <span>Language&colon; <span class="odin"></span></span>
+                <sub>Internet radio station for underground artists around the world</sub>
+                <span>Tool&colon; <span class="python"></span>, <span class="js"></span>, AWS Lambda</span>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error totam sint a explicabo quasi
-                    cupiditate
-                    impedit maiores numquam repudiandae quis itaque vel voluptatibus libero quaerat ad, provident ex?
-                    Modi,
-                    tempora.
+                    RhythmHQ was a project stemming from the idea of
+                    <a href="">Pirate Radio Stations</a>
+                    but with a focus on underground artists from different parts of the world. This was
+                    also around the time I discovered serverless architecture and thought it would be
+                    a fun way to learn more.
                 </p>
             </div>
         </section>
         <section class="project">
             <h1>Website</h1>
+            <a href="https&colon;//github.com/judah-caruso/judah-caruso.github.io">GitHub</a>
             <div>
-                <sub>Minimal site generator</sub>
-                <span>Language&colon; <span class="c"></span></span>
+                <sub>Minimal static site generator</sub>
+                <span>Tool&colon; <span class="c"></span></span>
+                <span>Post&colon;
+                    <a href="/back-online">01</a>
+                </span>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea nam itaque dolores eveniet ratione
-                    praesentium iste repellendus porro pariatur voluptatem. Incidunt nulla voluptatum perferendis
-                    inventore nobis sed enim dolor voluptate.
+                    I've written many site generators in the past. This is just another in the long bloodline of <em>House Static Site Generator</em>.
                 </p>
             </div>
         </section>
+        <section class="project">
+            <h1>SB2</h1>
+            <a href="https&colon;//github.com/judah-caruso/sb2">GitHub</a>
+            <div>
+                <sub>Stack-based virtual machine and interpreter</sub>
+                <span>Tool&colon; <span class="crystal"></span></span>
+            </div>
+            <p>
+                I've loved writing compilers, interpreters, and the like for as long as I can remember. SB2 was to learn more about
+                how stack machines work and also because I wanted to make an assembly-like language. I chose <span class="crystal"></span> since it's
+                designed to be a lower-level version of <span class="ruby"></span> and that's an interesting idea to me.
+            </p>
+        </section>
     </main>
+
+    :Include(footer.html)
 </body>
 
 </html>

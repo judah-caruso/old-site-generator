@@ -18,42 +18,81 @@
     <main>
         <article id="info">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptate excepturi voluptatum labore
-                deserunt nulla. Sunt, magnam, exercitationem dolores animi, sint totam laborum explicabo quis esse fugit
-                nihil mollitia fuga!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum minus, labore aliquam repellat fugiat sit
-                non at cum deleniti in laboriosam blanditiis. Pariatur libero debitis itaque optio perspiciatis quis
-                rem?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam a maxime qui asperiores consequuntur
-                explicabo sunt provident laudantium eius eum inventore totam aliquam facere quos delectus, quia
-                dignissimos optio natus?
+                Hi,
+
+                <span class="break"></span>
+
+                I'm Judah! A programmer, music producer, and game designer.
+
+                <span class="break"></span>
+                <span id="outro">Thanks for taking a look at my site</span>
             </p>
         </article>
     </main>
+
+    :Include(footer.html)
+
     <script>
         window.addEventListener("load", function (event) {
-            var element = document.getElementById("info");
-            var original_element = element.innerHTML;
-            var info_text = element.textContent.trim();
-            var intro_time = 15;
+            var info             = document.getElementById("info");
+            var element          = info.children[0];
+            var element_original = element.innerHTML;
+    
+            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghhijklmnopqrstuvwxyz0123456789@#$%^&*()_+=-";
+            var intro_time  = 13;
+            var update_rate = 30;
 
-            element.innerHTML = "";
-            var interval = setInterval(function () {
+            var shuffleCharacter = function(chr) {
+                switch (chr) {
+                    case "\n":
+                    case "\t":
+                    case "'":
+                    case ",":
+                    case ".":
+                    case "!":
+                    case " ":
+                        return chr;
+                        break;
+                    default:
+                        return chars[Math.floor(Math.random() * chars.length)];
+                }
+            };
+    
+            var interval = setInterval(function() {
                 if (intro_time <= 0) {
                     clearInterval(interval);
-                    element.innerHTML = original_element;
+                    element.innerHTML = element_original;
+    
+                    var hovering = false;
+    
+                    element = document.getElementById("outro");
+                    element.addEventListener("mouseover", function() { element.textContent = element_original; hovering = true; });
+                    element.addEventListener("mouseout", function() { hovering = false; });
+    
+                    element_original = element.textContent;
+    
+                    interval = setInterval(function() {
+                        if (hovering) return;
+                        var contentLength = element.textContent.trim().length;
+                        element.textContent = element.textContent.split("").map(shuffleCharacter).join("");
+                    }, update_rate);
+    
                     return;
                 }
-
-                element.innerHTML = "";
-                for (i = 0; i < info_text.length; i++) {
-                    element.innerHTML += String.fromCharCode(Math.floor(Math.random() * 127));
+    
+                var nodes = element.childNodes;
+                for (var i = 0; i < nodes.length; i++) {
+                    if (nodes[i].textContent.length > 0) {
+                        var lines = nodes[i].textContent.split("\n");
+                        nodes[i].textContent = lines.map(function(line) {
+                            return line.trim().split("").map(shuffleCharacter).join("");
+                        }).join("\n");
+                    }
                 }
-
+    
+                element.childNodes = nodes;
                 intro_time -= 1;
-            }, 30);
+            }, update_rate);
         });
     </script>
 </body>
