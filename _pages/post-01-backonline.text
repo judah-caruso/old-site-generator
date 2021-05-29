@@ -222,9 +222,9 @@ for this project.
 I'm pleased to say that rewriting this tool has been an enjoyable experience in
 both furthering my ability to write minimal code and learning how to not
 over-engineer a problem. I think a lot of programmers (myself included)
-obsess over asthetics and use that to solve the problems they're working on
+obsess over aesthetics and use that to solve the problems they're working on
 sometimes; the "right" solution should be aesthetically pleasing, right?
-This, however, isn't true. Good, effecient code isn't always aesthetically pleasing.
+This, however, isn't true. Good, efficient code isn't always aesthetically pleasing.
 For instance, some of the original lexing/parsing code
 
 <a href="https://www.youtube.com/watch?v=0woxSWjWsb8&t=4450s">Per Vognsen</a>
@@ -237,7 +237,7 @@ needed to.
 
 Current-day-me tends to write code this way; in-line unless necessary and avoid
 sprawling interfaces. However, this was one of the rare times I tried thinking
-about it directly, fighting against the draw of percieved simplicity. I both won
+about it directly, fighting against the draw of perceived simplicity. I both won
 and lost. See <code>void consume_tags(Post*, char**)</code>,
 a function used one time, in one place, for one task. Progress, but we're not out
 of the woods yet.
