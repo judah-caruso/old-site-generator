@@ -435,7 +435,11 @@ main(int argc, char** argv)
                     fputs(include_file, file);
                 }
                 else {
-                    printf("Unknown tag '%s' in '%s'\n", tag, post.filename);
+                    if (strlen(tag) <= 0) {
+                        fputc(':', file);
+                    } else {
+                        printf("Unknown tag '%s' in '%s'\n", tag, post.filename);
+                    }
                 }
             }
 
