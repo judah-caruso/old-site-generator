@@ -17,84 +17,162 @@
     :Include(header.html)
 
     <main style="margin-top&colon; 18px;">
-        <section class="project">
-            <h1>Sample Search</h1>
-            <a href="https&colon;//judahcaruso.com/samplesearch/">Site</a>
-            <div>
-                <sub>Music sample generator</sub>
-                <span>Tool&colon; <span class="js"></span></span>
-                <p>
-                    This is a simple utility for music producers to find samples using YouTube's vast library of videos.
-                    Since its creation the tool has been featured on some of the most popular sampling/music websites&colon;
-                    <a href="https&colon;//www.whosampled.com/news/2017/07/27/diggers-essential-sample-search-youtube-tool/">WhoSampled</a>,
-                    <a href="https&colon;//thevinylfactory.com/news/new-website-finds-obscure-songs-samples-youtube/">Vinyl Factory</a>,
-                    <a href="https&colon;//mixmag.fr/read/sample-search-outil-pour-les-diggers-news">Mixmag</a>,
-                    and
-                    <a href="https&colon;//www.tracklib.com/">Tracklib</a>.
-                    It was even featured in a
-                    <a href="https&colon;//abciber.org.br/anais-abciber-2017.pdf#page=3420">journal (p.3420)</a> 
-                    by the School of Communications and Arts at the University of São Paulo.
-                </p>
-            </div>
-        </section>
-        <section class="project">
-            <h1>Tank Tactics Bot</h1>
-            <a href="https&colon;//github.com/judah-caruso/tank-tactics">GitHub</a>
-            <div>
-                <sub>Discord port of the strategy game, Tank Turn Tactics</sub>
-                <span>Tool&colon; <span class="go"></span></span>
-                <p>
-                    I'm a huge fan of
-                    <a href="https&colon;//www.youtube.com/watch?v=t9WMNuyjm4w">Luke Mascat's talk</a>
-                    about a tabletop strategy game that was banned from his workplace.
-                    Not having a way to play this game myself, I decided to remake it, doing a small design deep dive
-                    on Discord bots as a medium for multiplayer games.
-                </p>
-            </div>
-        </section>
-        <section class="project">
-            <h1>Rhythm HQ</h1>
-            <a href="https&colon;//github.com/judah-caruso/rhythmhq">GitHub A</a>
-            <a href="https&colon;//github.com/judah-caruso/rhythmhq-flask">GitHub B</a>
-            <div>
-                <sub>Internet radio station for underground artists around the world</sub>
-                <span>Tool&colon; <span class="python"></span>, <span class="js"></span>, AWS Lambda</span>
-                <p>
-                    RhythmHQ was a project stemming from the idea of
-                    <a href="">Pirate Radio Stations</a>
-                    but with a focus on underground artists from different parts of the world. This was
-                    also around the time I discovered serverless architecture and thought it would be
-                    a fun way to learn more.
-                </p>
-            </div>
-        </section>
-        <section class="project">
-            <h1>Website</h1>
-            <a href="https&colon;//github.com/judah-caruso/judah-caruso.github.io">GitHub</a>
-            <div>
-                <sub>Minimal static site generator</sub>
-                <span>Tool&colon; <span class="c"></span></span>
-                <span>Post&colon;
-                    <a href="/back-online">01</a>
-                </span>
-                <p>
-                    I've written many site generators in the past. This is just another in the long bloodline of <em>House Static Site Generator</em>.
-                </p>
-            </div>
-        </section>
-        <section class="project">
-            <h1>SB2</h1>
-            <a href="https&colon;//github.com/judah-caruso/sb2">GitHub</a>
-            <div>
-                <sub>Stack-based virtual machine and interpreter</sub>
-                <span>Tool&colon; <span class="crystal"></span></span>
-            </div>
-            <p>
-                I've loved writing compilers, interpreters, and the like for as long as I can remember. SB2 was to learn more about
-                how stack machines work and also because I wanted to make an assembly-like language. I chose <span class="crystal"></span> since it's
-                designed to be a lower-level version of <span class="ruby"></span> and that's an interesting idea to me.
-            </p>
-        </section>
+        <details open>
+            <summary>Finished</summary>
+
+            <section class="project-section">
+                <article class="project">
+                    <h1>Sample Search</h1>
+                    <a href="https&colon;//judahcaruso.com/samplesearch/">Site</a>
+                    <div>
+                        <sub>Music sample generator</sub>
+                        <span>Tool&colon; <span class="js"></span></span>
+                        <p>
+                            This is a simple utility for music producers to find samples using YouTube's vast library of videos.
+                            Since its creation the tool has been featured on some of the most popular sampling/music websites&colon;
+                            <a href="https&colon;//www.whosampled.com/news/2017/07/27/diggers-essential-sample-search-youtube-tool/">WhoSampled</a>,
+                            <a href="https&colon;//thevinylfactory.com/news/new-website-finds-obscure-songs-samples-youtube/">Vinyl Factory</a>,
+                            <a href="https&colon;//mixmag.fr/read/sample-search-outil-pour-les-diggers-news">Mixmag</a>,
+                            and
+                            <a href="https&colon;//www.tracklib.com/">Tracklib</a>.
+                            It was even featured in a
+                            <a href="https&colon;//abciber.org.br/anais-abciber-2017.pdf#page=3420">journal (p.3420)</a> 
+                            by the School of Communications and Arts at the University of São Paulo.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <h1>Tank Tactics Bot</h1>
+                    <a href="https&colon;//github.com/judah-caruso/tank-tactics">GitHub</a>
+                    <div>
+                        <sub>Discord port of the strategy game, Tank Turn Tactics</sub>
+                        <span>Tool&colon; <span class="go"></span></span>
+                        <p>
+                            I'm a huge fan of
+                            <a href="https&colon;//www.youtube.com/watch?v=t9WMNuyjm4w">Luke Mascat's talk</a>
+                            about a tabletop strategy game that was banned from his workplace.
+                            Not having a way to play this game myself, I decided to remake it, doing a small design deep dive
+                            on Discord bots as a medium for multiplayer games.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <h1>Rhythm HQ</h1>
+                    <a href="https&colon;//github.com/judah-caruso/rhythmhq">GitHub A</a>
+                    <a href="https&colon;//github.com/judah-caruso/rhythmhq-flask">GitHub B</a>
+                    <div>
+                        <sub>Internet radio station for underground artists around the world</sub>
+                        <span>Tool&colon; <span class="python"></span>, <span class="js"></span>, AWS Lambda</span>
+                        <p>
+                            RhythmHQ was a project stemming from the idea of
+                            <a href="">Pirate Radio Stations</a>
+                            but with a focus on underground artists from different parts of the world. This was
+                            also around the time I discovered serverless architecture and thought it would be
+                            a fun way to learn more.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <h1>Website</h1>
+                    <a href="https&colon;//github.com/judah-caruso/judah-caruso.github.io">GitHub</a>
+                    <div>
+                        <sub>Minimal static site generator</sub>
+                        <span>Tool&colon; <span class="c"></span></span>
+                        <span>Post&colon;
+                            <a href="/back-online">01</a>
+                        </span>
+                        <p>
+                            I've written many site generators in the past. This is just another in the long bloodline of <em>House Static Site Generator</em>.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <h1>SB2</h1>
+                    <a href="https&colon;//github.com/judah-caruso/sb2">GitHub</a>
+                    <div>
+                        <sub>Stack-based virtual machine and interpreter</sub>
+                        <span>Tool&colon; <span class="crystal"></span></span>
+                    </div>
+                    <p>
+                        I've loved writing compilers, interpreters, and the like for as long as I can remember. SB2 was to learn more about
+                        how stack machines work and also because I wanted to make an assembly-like language. I chose <span class="crystal"></span> since it's
+                        designed to be a lower-level version of <span class="ruby"></span> and that's an interesting idea to me.
+                    </p>
+                </article>
+            </section>
+        </details>
+
+        <details open>
+            <summary>In Progress</summary>
+
+            <section class="project-section">
+                <article class="project">
+                    <h1>Project Throne</h1>
+                    <div>
+                        <sub>Multiplayer Action RPG</sub>
+                        <span>Tool&colon; <span class="jai"></span></span>
+                    </div>
+                    <p>
+                        A project I'm currently working on with a friend, written completely from scratch in <a href="https://en.wikipedia.org/wiki/Jonathan_Blow">Jonathan Blow's</a> new programming language, <a href="https://www.youtube.com/watch?v=UTqZNujQOlA"><span class="jai"></span></a>.
+                        One of the initial goals for the project was for it to be fully path/ray traced. This was achieved with the <a href="https://www.vulkan.org/">Vulkan</a> API and a lot of <em>"fun"</em> work.
+                        Our asset pipeline utilizes the <a href="https://www.khronos.org/gltf/">glTF</a> format of which we've written a performant JSON parser and performant, fully spec-compliant glTF loader.
+                        Our networking (server-authoritative) stack (dispatching, serialization, replication) is also written from scratch in <span class="jai"></span>.
+                        Our intention is to open-source most, if not all, of the code after the game's initial lifetime.
+                        <span class="break"></span>
+                        More information will be shared soon.
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h1>Valorant Planning Tool</h1>
+                    <div>
+                        <sub>A tool for Valorant coaches and teams to plan strategies</sub>
+                        <span>Tool&colon; <span class="ts"></span>, React, Deno</span>
+                    </div>
+                    <p>
+                        Planning is vital to professional <a href="https://playvalorant.com/">Valorant</a> and, without tools, teams are forced to do this via slow, clunky, or error-prone methods.
+                        This tools hopes to improve the planning process and allow coaches to create complex strategies quickly and easily. I chose to make this a web-app since it's convenient for most of the intended users.
+                        However, since Valorant coaches and teams spend a lot of time traveling, an offline desktop version will be released as well. <a href="https://deno.land">Deno</a> was chosen as it's a very lightweight platform and avoids
+                        most of the cruft and minor annoyances of Node/NPM. Plus having out-of-the-box <span class="ts"></span> support is very nice.
+                        <span class="break"></span>
+                        More information will be shared soon.
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h1>Project V</h1>
+                    <div>
+                        <sub>Collectible Card Game with a twist</sub>
+                        <span>Tool&colon; <span class="haxe"></span>, OpenFL</span>
+                    </div>
+                    <p>
+                        A cross-platform collectible card game written in <a href="https://haxe.org/"><span class="haxe"></span></a>, utilizing <a href="https://www.openfl.org/">OpenFL</a>.
+                        These tools were chosen due to their ease of use and ability to do cross-platform compilation and development in a painless way. I've also been wanting to use <span class="haxe"></span>
+                        in production/a larger project for a while now.
+                        <span class="break"></span>
+                        More information will be shared soon.
+                    </p>
+                </article>
+
+                <article class="project">
+                    <h1>Core</h1>
+                    <div>
+                        <sub>Header-only library</sub>
+                        <span>Tool&colon; <span class="c"></span></span>
+                    </div>
+                    <p>
+                        Core is a header-only library for <span class="c"></span> that provides me everything I miss from other languages (mostly <span class="jai"></span>):
+                        platform-agnostic windowing, graphics, and input, nicer strings, dynamic arrays, unobtrusive allocators, and a <span class="jai"></span>-like <code>printf</code>.
+                        <span class="break"></span>
+                        I'm unsure if I'll ever release this as it's very specific to me and what I like. If I do, I'll provide a link, write a post about it, and move this to the "finished" section.
+                    </p>
+                </article>
+            </section>
+        </details>
     </main>
 
     :Include(footer.html)

@@ -7,7 +7,7 @@
 
 <head>
     :Include(meta.html)
-    <title>JC &colon; :Title</title>
+    <title>JC&colon; :Title</title>
     <style>
         :Include(style.css)
     </style>
@@ -25,7 +25,7 @@
                 I'm Judah! A programmer, music producer, and game designer.
 
                 <span class="break"></span>
-                <span id="outro">Thanks for taking a look at my site</span>
+                <span id="outro">Thanks for taking a look at my site &#9829;</span>
             </p>
         </article>
     </main>
