@@ -127,8 +127,21 @@ code {
     overflow-x: scroll;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 3px 3px 4px 0px #00000008;
+    border-radius: 5px;
+}
+
+main aside {
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+
 summary                         { list-style: none; }
-summary:hover                   { cursor: pointer; } 
+summary:hover                   { cursor: pointer; }
 summary                         { padding: 4px; background-color: var(--var_link_background); }
 
 summary::-webkit-details-marker { display: none; }
@@ -235,7 +248,9 @@ details                         { padding-bottom: 5px; }
     .project     { width: 100%; }
 
     footer div,
+    main aside,
     main details,
+    main section,
     main article { width: 80%; margin: 0 auto; }
 }
 
@@ -246,7 +261,9 @@ details                         { padding-bottom: 5px; }
     .project     { width: 100%; }
 
     footer div,
+    main aside,
     main details,
+    main section,
     main article { width: 80%; margin: 0 auto; }
 
     footer                       { text-align: center; }
@@ -261,7 +278,9 @@ details                         { padding-bottom: 5px; }
     .project     { width: 100%; }
 
     footer div,
+    main aside,
     main details,
+    main section,
     main article { width: 70%; margin: 0 auto; }
 
     footer                       { text-align: center; }

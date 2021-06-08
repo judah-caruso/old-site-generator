@@ -127,7 +127,7 @@ underscores, etc. It's tempting&mdash;and easy&mdash;to do something like:
 // Numbers
 if (is_number(current)) {
     // Offloading number parsing for simplicity
-    char* number = start_string(current); 
+    char* number = start_string(current);
 
     while ((current = *words++) &&
             (is_number(current) || valid_delimiter(current)))
@@ -180,7 +180,7 @@ consistency in our methodologies. If one of our methods is to write small,
 general-purpose functions out of anything we repeat once or twice, in order to
 stay consistent, we're going to write small, general-purpose functions out of
 anything we repeat once or twice. What's a programmer without rules and
-processes they follow rigorously and defend to the death? 
+processes they follow rigorously and defend to the death?
 
 <span class="break"></span>
 

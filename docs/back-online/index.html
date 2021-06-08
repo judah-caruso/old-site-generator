@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png"
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAK9JREFUWIXtWEEOgCAMK8YnslfCH/WiiQECTqc1Zr1JkJWWdISADTHGBS8i5xwAIDCKH0kEVvEdE7M4AMzlQEpJtYCIVGO9Ncr55gpoN0C3gE6gOgOlR6WkLc97GM3vKtDyU+vxCHQLLhGwVKFKwrs5MPr/8RzQ4hQBEVGffjMCx8JnSGiJejd0Aub3AW3voCvgBIY5oPX0n73g1wSqHLCG58DnCfh9gP9AsX+wnmhW1GlFK0LJsVcAAAAASUVORK5CYII=" />
-    <title>JC&colon; Back online</title>
+
+    <title>JC: Back online</title>
     <style>
         /* TODO: media-query for prefers-color-scheme light/dark */
 :root {
@@ -137,8 +138,21 @@ code {
     overflow-x: scroll;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 3px 3px 4px 0px #00000008;
+    border-radius: 5px;
+}
+
+main aside {
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+
 summary                         { list-style: none; }
-summary:hover                   { cursor: pointer; } 
+summary:hover                   { cursor: pointer; }
 summary                         { padding: 4px; background-color: var(--var_link_background); }
 
 summary::-webkit-details-marker { display: none; }
@@ -245,7 +259,9 @@ details                         { padding-bottom: 5px; }
     .project     { width: 100%; }
 
     footer div,
+    main aside,
     main details,
+    main section,
     main article { width: 80%; margin: 0 auto; }
 }
 
@@ -256,7 +272,9 @@ details                         { padding-bottom: 5px; }
     .project     { width: 100%; }
 
     footer div,
+    main aside,
     main details,
+    main section,
     main article { width: 80%; margin: 0 auto; }
 
     footer                       { text-align: center; }
@@ -271,7 +289,9 @@ details                         { padding-bottom: 5px; }
     .project     { width: 100%; }
 
     footer div,
+    main aside,
     main details,
+    main section,
     main article { width: 70%; margin: 0 auto; }
 
     footer                       { text-align: center; }
@@ -332,11 +352,11 @@ details                         { padding-bottom: 5px; }
 
 <hr />
 
+
     <main>
         <article>
             <h1>Back online</h1>
             
-
 <p>
 
 After many moons the most active blog in the world is now back online. I can't
@@ -462,7 +482,7 @@ underscores, etc. It's tempting&mdash;and easy&mdash;to do something like:
 // Numbers
 if (is_number(current)) {
     // Offloading number parsing for simplicity
-    char* number = start_string(current); 
+    char* number = start_string(current);
 
     while ((current = *words++) &&
             (is_number(current) || valid_delimiter(current)))
@@ -515,7 +535,7 @@ consistency in our methodologies. If one of our methods is to write small,
 general-purpose functions out of anything we repeat once or twice, in order to
 stay consistent, we're going to write small, general-purpose functions out of
 anything we repeat once or twice. What's a programmer without rules and
-processes they follow rigorously and defend to the death? 
+processes they follow rigorously and defend to the death?
 
 <span class="break"></span>
 
@@ -587,12 +607,14 @@ Small code != simple code.
 <code>printf("Thank%c %s! I like %.3f\r\n", 's', "for reading", 3.1415926538);</code>
 
 </p>
+
         </article>
-        <aside style="text-align&colon; right; width&colon; 100%;">
-            <span>Posted&colon; 2021/05/28</span>
+        <aside>
+            <span>Posted: 2021/05/28</span>
         </aside>
     </main>
 </body>
 
 </html>
+
 <!-- Generated file -->

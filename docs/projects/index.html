@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png"
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAK9JREFUWIXtWEEOgCAMK8YnslfCH/WiiQECTqc1Zr1JkJWWdISADTHGBS8i5xwAIDCKH0kEVvEdE7M4AMzlQEpJtYCIVGO9Ncr55gpoN0C3gE6gOgOlR6WkLc97GM3vKtDyU+vxCHQLLhGwVKFKwrs5MPr/8RzQ4hQBEVGffjMCx8JnSGiJejd0Aub3AW3voCvgBIY5oPX0n73g1wSqHLCG58DnCfh9gP9AsX+wnmhW1GlFK0LJsVcAAAAASUVORK5CYII=" />
-    <title>JC&colon; Projects</title>
+
+    <title>JC: Projects</title>
     <style>
         /* TODO: media-query for prefers-color-scheme light/dark */
 :root {
@@ -138,8 +138,21 @@ code {
     overflow-x: scroll;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 3px 3px 4px 0px #00000008;
+    border-radius: 5px;
+}
+
+main aside {
+    width: 100%;
+    text-align: right;
+    padding-top: 10px;
+}
+
 summary                         { list-style: none; }
-summary:hover                   { cursor: pointer; } 
+summary:hover                   { cursor: pointer; }
 summary                         { padding: 4px; background-color: var(--var_link_background); }
 
 summary::-webkit-details-marker { display: none; }
@@ -246,7 +259,9 @@ details                         { padding-bottom: 5px; }
     .project     { width: 100%; }
 
     footer div,
+    main aside,
     main details,
+    main section,
     main article { width: 80%; margin: 0 auto; }
 }
 
@@ -257,7 +272,9 @@ details                         { padding-bottom: 5px; }
     .project     { width: 100%; }
 
     footer div,
+    main aside,
     main details,
+    main section,
     main article { width: 80%; margin: 0 auto; }
 
     footer                       { text-align: center; }
@@ -272,7 +289,9 @@ details                         { padding-bottom: 5px; }
     .project     { width: 100%; }
 
     footer div,
+    main aside,
     main details,
+    main section,
     main article { width: 70%; margin: 0 auto; }
 
     footer                       { text-align: center; }
@@ -333,27 +352,28 @@ details                         { padding-bottom: 5px; }
 
 <hr />
 
-    <main style="margin-top&colon; 18px;">
+
+    <main style="margin-top: 18px;">
         <details open>
             <summary>Finished</summary>
 
             <section class="project-section">
                 <article class="project">
                     <h1>Sample Search</h1>
-                    <a href="https&colon;//judahcaruso.com/samplesearch/">Site</a>
+                    <a href="https://judahcaruso.com/samplesearch/">Site</a>
                     <div>
                         <sub>Music sample generator</sub>
-                        <span>Tool&colon; <span class="js"></span></span>
+                        <span>Tool: <span class="js"></span></span>
                         <p>
                             This is a simple utility for music producers to find samples using YouTube's vast library of videos.
                             Since its creation the tool has been featured on some of the most popular sampling/music websites&colon;
-                            <a href="https&colon;//www.whosampled.com/news/2017/07/27/diggers-essential-sample-search-youtube-tool/">WhoSampled</a>,
-                            <a href="https&colon;//thevinylfactory.com/news/new-website-finds-obscure-songs-samples-youtube/">Vinyl Factory</a>,
-                            <a href="https&colon;//mixmag.fr/read/sample-search-outil-pour-les-diggers-news">Mixmag</a>,
+                            <a href="https://www.whosampled.com/news/2017/07/27/diggers-essential-sample-search-youtube-tool/">WhoSampled</a>,
+                            <a href="https://thevinylfactory.com/news/new-website-finds-obscure-songs-samples-youtube/">Vinyl Factory</a>,
+                            <a href="https://mixmag.fr/read/sample-search-outil-pour-les-diggers-news">Mixmag</a>,
                             and
-                            <a href="https&colon;//www.tracklib.com/">Tracklib</a>.
+                            <a href="https://www.tracklib.com/">Tracklib</a>.
                             It was even featured in a
-                            <a href="https&colon;//abciber.org.br/anais-abciber-2017.pdf#page=3420">journal (p.3420)</a> 
+                            <a href="https://abciber.org.br/anais-abciber-2017.pdf#page=3420">journal (p.3420)</a>
                             by the School of Communications and Arts at the University of São Paulo.
                         </p>
                     </div>
@@ -361,13 +381,13 @@ details                         { padding-bottom: 5px; }
 
                 <article class="project">
                     <h1>Tank Tactics Bot</h1>
-                    <a href="https&colon;//github.com/judah-caruso/tank-tactics">GitHub</a>
+                    <a href="https://github.com/judah-caruso/tank-tactics">GitHub</a>
                     <div>
                         <sub>Discord port of the strategy game, Tank Turn Tactics</sub>
-                        <span>Tool&colon; <span class="go"></span></span>
+                        <span>Tool: <span class="go"></span></span>
                         <p>
                             I'm a huge fan of
-                            <a href="https&colon;//www.youtube.com/watch?v=t9WMNuyjm4w">Luke Mascat's talk</a>
+                            <a href="https://www.youtube.com/watch?v=t9WMNuyjm4w">Luke Mascat's talk</a>
                             about a tabletop strategy game that was banned from his workplace.
                             Not having a way to play this game myself, I decided to remake it, doing a small design deep dive
                             on Discord bots as a medium for multiplayer games.
@@ -377,11 +397,11 @@ details                         { padding-bottom: 5px; }
 
                 <article class="project">
                     <h1>Rhythm HQ</h1>
-                    <a href="https&colon;//github.com/judah-caruso/rhythmhq">GitHub A</a>
-                    <a href="https&colon;//github.com/judah-caruso/rhythmhq-flask">GitHub B</a>
+                    <a href="https://github.com/judah-caruso/rhythmhq">GitHub A</a>
+                    <a href="https://github.com/judah-caruso/rhythmhq-flask">GitHub B</a>
                     <div>
                         <sub>Internet radio station for underground artists around the world</sub>
-                        <span>Tool&colon; <span class="python"></span>, <span class="js"></span>, AWS Lambda</span>
+                        <span>Tool: <span class="python"></span>, <span class="js"></span>, AWS Lambda</span>
                         <p>
                             RhythmHQ was a project stemming from the idea of
                             <a href="">Pirate Radio Stations</a>
@@ -394,11 +414,11 @@ details                         { padding-bottom: 5px; }
 
                 <article class="project">
                     <h1>Website</h1>
-                    <a href="https&colon;//github.com/judah-caruso/judah-caruso.github.io">GitHub</a>
+                    <a href="https://github.com/judah-caruso/judah-caruso.github.io">GitHub</a>
                     <div>
                         <sub>Minimal static site generator</sub>
-                        <span>Tool&colon; <span class="c"></span></span>
-                        <span>Post&colon;
+                        <span>Tool: <span class="c"></span></span>
+                        <span>Post:
                             <a href="/back-online">01</a>
                         </span>
                         <p>
@@ -409,10 +429,10 @@ details                         { padding-bottom: 5px; }
 
                 <article class="project">
                     <h1>SB2</h1>
-                    <a href="https&colon;//github.com/judah-caruso/sb2">GitHub</a>
+                    <a href="https://github.com/judah-caruso/sb2">GitHub</a>
                     <div>
                         <sub>Stack-based virtual machine and interpreter</sub>
-                        <span>Tool&colon; <span class="crystal"></span></span>
+                        <span>Tool: <span class="crystal"></span></span>
                     </div>
                     <p>
                         I've loved writing compilers, interpreters, and the like for as long as I can remember. SB2 was to learn more about
@@ -431,13 +451,13 @@ details                         { padding-bottom: 5px; }
                     <h1>Project Throne</h1>
                     <div>
                         <sub>Multiplayer Action RPG</sub>
-                        <span>Tool&colon; <span class="jai"></span></span>
+                        <span>Tool: <span class="jai"></span></span>
                     </div>
                     <p>
                         A project I'm currently working on with a friend, written completely from scratch in <a href="https://en.wikipedia.org/wiki/Jonathan_Blow">Jonathan Blow's</a> new programming language, <a href="https://www.youtube.com/watch?v=UTqZNujQOlA"><span class="jai"></span></a>.
                         One of the initial goals for the project was for it to be fully path/ray traced. This was achieved with the <a href="https://www.vulkan.org/">Vulkan</a> API and a lot of <em>"fun"</em> work.
                         Our asset pipeline utilizes the <a href="https://www.khronos.org/gltf/">glTF</a> format of which we've written a performant JSON parser and performant, fully spec-compliant glTF loader.
-                        Our networking (server-authoritative) stack (dispatching, serialization, replication) is also written from scratch in <span class="jai"></span>.
+                        Our networking (server-authoritative) stack (dispatching, (de)serialization, replication) is also written from scratch in <span class="jai"></span>.
                         Our intention is to open-source most, if not all, of the code after the game's initial lifetime.
                         <span class="break"></span>
                         More information will be shared soon.
@@ -448,7 +468,7 @@ details                         { padding-bottom: 5px; }
                     <h1>Valorant Planning Tool</h1>
                     <div>
                         <sub>A tool for Valorant coaches and teams to plan strategies</sub>
-                        <span>Tool&colon; <span class="ts"></span>, React, Deno</span>
+                        <span>Tool: <span class="ts"></span>, React, Deno</span>
                     </div>
                     <p>
                         Planning is vital to professional <a href="https://playvalorant.com/">Valorant</a> and, without tools, teams are forced to do this via slow, clunky, or error-prone methods.
@@ -464,7 +484,7 @@ details                         { padding-bottom: 5px; }
                     <h1>Project V</h1>
                     <div>
                         <sub>Collectible Card Game with a twist</sub>
-                        <span>Tool&colon; <span class="haxe"></span>, OpenFL</span>
+                        <span>Tool: <span class="haxe"></span>, OpenFL</span>
                     </div>
                     <p>
                         A cross-platform collectible card game written in <a href="https://haxe.org/"><span class="haxe"></span></a>, utilizing <a href="https://www.openfl.org/">OpenFL</a>.
@@ -479,7 +499,7 @@ details                         { padding-bottom: 5px; }
                     <h1>Core</h1>
                     <div>
                         <sub>Header-only library</sub>
-                        <span>Tool&colon; <span class="c"></span></span>
+                        <span>Tool: <span class="c"></span></span>
                     </div>
                     <p>
                         Core is a header-only library for <span class="c"></span> that provides me everything I miss from other languages (mostly <span class="jai"></span>):
@@ -492,13 +512,14 @@ details                         { padding-bottom: 5px; }
         </details>
     </main>
 
-        <footer>
-        <hr />
-        <div>
-            <span style="float: right">Judah Caruso © 2021</span>
-            <span>Site generated by <a href="https://github.com/judah-caruso/judah-caruso.github.io">this</a></span>
-        </div>
-    </footer>
+    <footer>
+    <hr />
+    <div>
+        <span style="float: right">Judah Caruso © 2021</span>
+        <span>Site generated by <a href="https://github.com/judah-caruso/judah-caruso.github.io">this</a></span>
+    </div>
+</footer>
+
 </body>
 
 </html>
