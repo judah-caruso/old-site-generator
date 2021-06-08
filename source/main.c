@@ -63,7 +63,7 @@ push_char(char chr)
     *value = chr;
 }
 
-char* 
+char*
 push_string(char* str, bool include_terminator)
 {
     char* value = str;
@@ -166,7 +166,7 @@ contains(char* haystack, char* needle)
 void
 consume_tags(Post* post, char** contents)
 {
-    char *contents_copy = *contents;
+    char* contents_copy = *contents;
 
     bool end_of_tags = false;
     char current = 0;
@@ -174,26 +174,28 @@ consume_tags(Post* post, char** contents)
         switch (current) {
             // Start of tag
             case ':': {
-                char* tag = contents_copy;
-                char* value = 0;
-
                 int i = 0;
+
+                char* tag = contents_copy;
                 while ((current = *contents_copy++)) {
-                    i++;
-
                     if (current == '=') {
-                        *(tag + i - 1) = '\0';
-
-                        i = 0;
-                        value = contents_copy;
-                        while ((current = *contents_copy++)) {
-                            if (current == '\n') break;
-                            i++;
-                        }
-
-                        *(value + i - 1) = '\0';
+                        *(tag + i) = '\0';
                         break;
                     }
+
+                    i++;
+                }
+
+                i = 0; // Reset 'i' so we don't go over the end of the string
+
+                char* value = contents_copy;
+                while ((current = *contents_copy++)) {
+                    if (current == '\n') {
+                        *(value + i) = '\0';
+                        break;
+                    }
+
+                    i++;
                 }
 
                 if (strcmp(TAG_TITLE, tag) == 0) {
@@ -238,10 +240,11 @@ consume_tags(Post* post, char** contents)
                     }
                 }
                 else if (strcmp(TAG_TEMPLATE, tag) == 0) {
-                    if (strlen(value) <= 0) {
-                        post->template = NO_TEMPLATE;
-                    } else {
+                    if (*value) {
                         post->template = value;
+                    }
+                    else {
+                        post->template = NO_TEMPLATE;
                     }
                 }
             } break;
