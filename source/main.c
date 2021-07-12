@@ -164,9 +164,9 @@ contains(char* haystack, char* needle)
 }
 
 void
-consume_tags(Post* post, char** contents)
+consume_tags(Post* post)
 {
-    char* contents_copy = *contents;
+    char* contents_copy = post->text;
 
     bool end_of_tags = false;
     char current = 0;
@@ -259,7 +259,7 @@ consume_tags(Post* post, char** contents)
 
                 if (dashes >= 3) {
                     end_of_tags = true;
-                    *contents = contents_copy;
+                    post->text = contents_copy;
                 }
             } break;
         }
@@ -268,7 +268,7 @@ consume_tags(Post* post, char** contents)
     // @Todo(Judah): Default values?
     // if (!post->title) post->title = "Something";
     // if (!post->kind) post->kind = "Blog";
-    // if (!post->date) post->date = "";
+    if (!post->date) post->date = "";
     if (post->template == 0) {
         post->template = "template.html";
     }
@@ -297,7 +297,7 @@ int
 main(int argc, char** argv)
 {
     memory = calloc(BUFFER_SIZE, 1);
-    if (!memory) { panic("unable to allocate main buffer!"); }
+    if (!memory) panic("unable to allocate main buffer!");
 
     DIR *pages_directory = opendir(RAW_ROOT);
     if (!pages_directory) {
@@ -306,6 +306,10 @@ main(int argc, char** argv)
 
     char* site_style  = 0;
     char* index_page  = 0;
+
+    // @Note(Judah): How we iterate through this is dumb and should be changed.
+    // We process MAX_POSTS - 1 posts regardless of how many we actually need to.
+    // Putting this comment here since we iterate over 'posts' in many different places; that should probably change, too.
     Post posts[MAX_POSTS] = {{0}};
 
     int i = MAX_POSTS - 1;
@@ -341,7 +345,7 @@ main(int argc, char** argv)
         post->filename = push_string(filename, true);
         post->text = contents;
 
-        consume_tags(post, &post->text);
+        consume_tags(post);
     }
 
     closedir(pages_directory);
@@ -479,7 +483,7 @@ main(int argc, char** argv)
             push_char(0);
 
             if (strcmp(TAG_POSTS, tag) == 0) {
-                for (int i = 0; i < MAX_POSTS; i++) {
+                for (int i = MAX_POSTS - 1; i >= 0; i--) {
                     Post post = posts[i];
                     if (!post.title || (post.kind & KindPage)) continue;
                     fprintf(index_file, "<li><a href=\"%s\">%s</a></li>\n", post.url, post.title);
