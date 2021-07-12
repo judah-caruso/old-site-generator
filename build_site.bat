@@ -5,7 +5,6 @@ call build.bat
 echo *** Building site...
 
 rmdir /Q /S docs
-website.com &&^
-copy CNAME docs\
+website.com
 
 echo *** Site built!
